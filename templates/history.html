@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>履歴</title>
+</head>
+<body>
+  <h1>レシピ提案の履歴</h1>
+  <a href="/">トップに戻る</a>
+  <ul>
+    {% for r in records %}
+      <li>{{ r[4] }} - 材料: {{ r[1] }} / 気分: {{ r[2] }} → {{ r[3] }}</li>
+    {% endfor %}
+  </ul>
+</body>
+</html>
