@@ -2,6 +2,10 @@
 Flaskを使ったレシピ提案Webアプリ
 
 # git の流れ
+1. ブランチをmainに移動
+    > git checkout main
+1. リモートリポジトリから変更を反映する
+    > git pull
 1. ブランチをきる
     > git checkout -b {ブランチ名}
 2. 修正をする
