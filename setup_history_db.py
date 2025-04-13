@@ -1,8 +1,10 @@
 import sqlite3
 
+# DBに接続（なければ作成される）
 conn = sqlite3.connect('recipes.db')
 c = conn.cursor()
 
+# テーブル作成
 c.execute('''
 CREATE TABLE IF NOT EXISTS history (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -15,4 +17,5 @@ CREATE TABLE IF NOT EXISTS history (
 
 conn.commit()
 conn.close()
-print("✅ データベースとテーブル作成完了")
+
+print("✅ history テーブルを作成しました")

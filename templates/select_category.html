@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>カテゴリ選択 | ファミマ商品表示</title>
+
+    <!-- ✅ Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+
+            <h2 class="text-center text-primary mb-4">ファミマ 商品カテゴリ選択</h2>
+
+            <form method="POST" action="/category" class="card p-4 shadow-sm bg-white border-0">
+                <div class="mb-3">
+                    <label for="url" class="form-label">カテゴリを選んでください:</label>
+                    <select name="url" class="form-select" required>
+                        <option value="" disabled selected>▼ カテゴリを選択 ▼</option>
+                        <option value="https://www.family.co.jp/goods/safety/goods010.html">サラダ</option>
+                        <option value="https://www.family.co.jp/goods/safety/goods020.html">おにぎり</option>
+                        <option value="https://www.family.co.jp/goods/safety/goods030.html">寿司</option>
+                        <option value="https://www.family.co.jp/goods/safety/goods040.html">サンドイッチ</option>
+                        <option value="https://www.family.co.jp/goods/safety/goods050.html">麺類</option>
+                        <option value="https://www.family.co.jp/goods/safety/goods060.html">丼物</option>
+                        <option value="https://www.family.co.jp/goods/safety/goods070.html">惣菜</option>
+                        <option value="https://www.family.co.jp/goods/safety/goods080.html">スープ</option>
+                        <option value="https://www.family.co.jp/goods/safety/goods090.html">サイド</option>
+                        <option value="https://www.family.co.jp/goods/safety/goods100.html">弁当</option>
+                        <option value="https://www.family.co.jp/goods/safety/friedfoods.html">フライドフード</option>
+                        <option value="https://www.family.co.jp/goods/safety/chukaman.html">中華まん</option>
+                        <option value="https://www.family.co.jp/goods/safety/cafe.html">カフェ</option>
+                    </select>
+                </div>
+
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary btn-lg">商品を取得して表示</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
